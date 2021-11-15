@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://kosomon.github.io/sitemap.xml

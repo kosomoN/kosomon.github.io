@@ -1,1 +1,0 @@
-# kosomon.github.io
