@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: December 4, 2022 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.095e10c610e758e6fb3f5ded0edfc696.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Onni Kosomaa" />
+
+
+
+
+
+  
+
+<meta name="description" content="Dual-channel floating bench power supply designed for the Electronics Workshop course at Aalto University." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://kosomon.github.io/project/powersupply/" />
+<link rel="canonical" href="https://kosomon.github.io/project/powersupply/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu16a4c61bfb5a67b5f6a4a662a4f493a7_286411_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu16a4c61bfb5a67b5f6a4a662a4f493a7_286411_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@kosomon" />
+  <meta property="twitter:creator" content="@kosomon" />
+<meta property="twitter:image" content="https://kosomon.github.io/project/powersupply/featured.jpg" />
+<meta property="og:site_name" content="Onni Kosomaa" />
+<meta property="og:url" content="https://kosomon.github.io/project/powersupply/" />
+<meta property="og:title" content="Bench Power Supply | Onni Kosomaa" />
+<meta property="og:description" content="Dual-channel floating bench power supply designed for the Electronics Workshop course at Aalto University." /><meta property="og:image" content="https://kosomon.github.io/project/powersupply/featured.jpg" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2019-12-19T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2019-12-19T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kosomon.github.io/project/powersupply/"
+  },
+  "headline": "Bench Power Supply",
+  
+  "image": [
+    "https://kosomon.github.io/project/powersupply/featured.jpg"
+  ],
+  
+  "datePublished": "2019-12-19T00:00:00Z",
+  "dateModified": "2019-12-19T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Onni Kosomaa"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Onni Kosomaa",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kosomon.github.io/media/icon_hu16a4c61bfb5a67b5f6a4a662a4f493a7_286411_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Dual-channel floating bench power supply designed for the Electronics Workshop course at Aalto University."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Bench Power Supply | Onni Kosomaa</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="98ea4bfc9097a7b65f136b6a782f7ca4" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.fe8634e7d00f14d07fb33caf14cc8e55.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Onni Kosomaa</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Onni Kosomaa</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#gallery"><span>Gallery</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Bench Power Supply</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Dec 19, 2019
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 540px;">
+  <div style="position: relative">
+    <img src="/project/powersupply/featured_hu9732a99490f44bf836cde7f46ca6dc70_2323902_720x2500_fit_q75_h2_lanczos.webp" width="720" height="540" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="summary"><strong>Summary</strong></h2>
+<p>Together with two friends, we designed a dual-channel floating bench power supply for the Electronics Workshop course at Aalto University. The course provided facilities for designing and executing an electronics project over the course of a semester. We designed everything from the analog and digital circuits to the enclosure.</p>
+<p>Both of the power supply output channels are independent, and have their own galvanically isolated control system. The user interface is running on a Raspberry Pi, which communicates with the power supply channels through an SPI connection through optocouplers.</p>
+<ul>
+<li>Designed the regulator PCB and two interface PCBs from scratch using KiCAD.</li>
+<li>We tried out as many PCB manufacturing techniques as possible, including acid etching, CNC routing and we had the regulator PCBs professionally manufactured (not including assembly).</li>
+<li>Regulator firmware for the AVR microcontroller.</li>
+<li>Interface software for Raspberry Pi.</li>
+<li>Physical user interface software as a USB HID.</li>
+<li>Evaluated the finished power supply against a commercial power supply with similar specifications.</li>
+</ul>
+<hr>
+<h2 id="introduction"><strong>Introduction</strong></h2>
+<p>The subject of the project was an adjustable laboratory power supply. Based on the specification, we set out to build a laboratory power supply with a digitally adjustable voltage between 0-24V and a current of 0-2A. The specification changed slightly from the design, as the transformer we chose gives up to 3A power to the two channels. The voltage and current of the final device are adjustable between 0-24V and 0-3A.</p>
+<h2 id="implemented-hardware"><strong>Implemented hardware</strong></h2>
+<p>Features:</p>
+<ul>
+<li>Two galvanically isolated output channels</li>
+<li>Voltage range: 0-24V / channel, 48V if connected in series</li>
+<li>Current range: 0-3A / channel, 6A if connected in parallel</li>
+<li>Power: 144W</li>
+<li>Voltage accuracy: <strong>≈</strong> 50mV</li>
+<li>Current accuracy: <strong>≈</strong> 10mA</li>
+<li>Outputs: Two / channel, and one for ground</li>
+<li>Inputs: C13 connector 230V</li>
+<li>Overheating protection</li>
+<li>Current limitation</li>
+<li>Temperature-controlled fan</li>
+<li>7” LCD display</li>
+<li>Keypad and rotary encoder for adjusting settings</li>
+<li>Controllable through USB</li>
+</ul>
+<p>The operation of the device is controlled by a single-board computer Raspberry Pi Zero. The user interface is displayed on a 7” LCD and the device can be controlled through either physical keys or over USB.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="img" srcset="
+               /project/powersupply/regulator_block_diagram_hu5a1bfb693d22e8b6e3d1b3b772fee3be_87525_18d80003bf6e17a61cb75b909c76f9ef.webp 400w,
+               /project/powersupply/regulator_block_diagram_hu5a1bfb693d22e8b6e3d1b3b772fee3be_87525_5c1cbda3b13bbc267055627684ce32db.webp 760w,
+               /project/powersupply/regulator_block_diagram_hu5a1bfb693d22e8b6e3d1b3b772fee3be_87525_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/powersupply/regulator_block_diagram_hu5a1bfb693d22e8b6e3d1b3b772fee3be_87525_18d80003bf6e17a61cb75b909c76f9ef.webp"
+               width="704"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="linear-regulator"><strong>Linear Regulator</strong></h3>
+<p>The Raspberry Pi controls two identical regulator circuits using SPI. One such circuit is illustrated in the block diagram below the galvanic isolation line. The circuit has an AVR microcontroller which receives the desired voltage and current limits from the Raspberry Pi. The microcontroller then sends the received voltage and current limits to the DA converter and reads the realized voltage and current from the AD converter. Each circuit has its own optical isolators for the SPI bus and the operating voltages of both circuits are galvanically isolated from each other and from ground. The Raspberry Pi also controls the output relays to disconnect the load if necessary.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-the-circuit-diagram-for-the-analog-section-of-the-regulator-circuit">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="img" srcset="
+               /project/powersupply/regulator_circuit_diagram_hucc3009fab59d7f6caa5ef319fffc2df4_89533_1656aa9498a7bc06d64f1ab933b7270d.webp 400w,
+               /project/powersupply/regulator_circuit_diagram_hucc3009fab59d7f6caa5ef319fffc2df4_89533_42b86e2e19ec7405c576f4e0141d7656.webp 760w,
+               /project/powersupply/regulator_circuit_diagram_hucc3009fab59d7f6caa5ef319fffc2df4_89533_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/powersupply/regulator_circuit_diagram_hucc3009fab59d7f6caa5ef319fffc2df4_89533_1656aa9498a7bc06d64f1ab933b7270d.webp"
+               width="760"
+               height="538"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      The circuit diagram for the analog section of the regulator circuit.
+    </figcaption></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-regulator-pcb-for-a-single-channel">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Regulator PCB for a single channel." srcset="
+               /project/powersupply/psu_pcb_hud6adb908567dc5d9a95c9f8bb861f90f_1371009_1c80a24239de970d0ca48d2a48192efa.webp 400w,
+               /project/powersupply/psu_pcb_hud6adb908567dc5d9a95c9f8bb861f90f_1371009_e9e1ba3068cf3af8966562885b00bb65.webp 760w,
+               /project/powersupply/psu_pcb_hud6adb908567dc5d9a95c9f8bb861f90f_1371009_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/project/powersupply/psu_pcb_hud6adb908567dc5d9a95c9f8bb861f90f_1371009_1c80a24239de970d0ca48d2a48192efa.webp"
+               width="760"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Regulator PCB for a single channel.
+    </figcaption></figure>
+</p>
+<p>The main components of the regulators are:</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operational Amplifier</td>
+<td>MAX9944ASA+T</td>
+</tr>
+<tr>
+<td>Analog to Digital Converter (ADC)</td>
+<td>MCP3422A0-E/SN</td>
+</tr>
+<tr>
+<td>Digital to Analog Converter (DAC)</td>
+<td>MCP4822-E/SN</td>
+</tr>
+<tr>
+<td>Current Amplifier</td>
+<td>INA240A1DR</td>
+</tr>
+<tr>
+<td>Microcontroller</td>
+<td>ATMEGA328PB-AU</td>
+</tr>
+</tbody>
+</table>
+<p>The circuit is switched on when a 25-28V (rms) AC voltage is connected to connector J1. The AC voltage is rectified and filtered with a 15000uF electrolytic capacitor. The microcontroller monitors the operating voltage through the UNREG_MON pin connected to the ADC. This signal is reduced and overvoltage-protected.</p>
+<p>U2 provides the 5V supply voltage for the microchips requiring it. In order to keep the power dissipated in the regulator reasonable, a 15V zener diode is placed between it and the operating voltage, which dissipates approximately half of the power. The operational amplifier U1 controls the transistor on the high voltage side of the load, which means it operates in a large voltage range and is connected directly to the rectifier through the overvoltage protection formed by the zener diode D3.</p>
+<p>The output voltage of the power supply is measured through the voltage divider formed by R6 and R7 and the current is measured through a separate current amplifier U3. These provide the reference voltages of the operational amplifiers as well as the signals measured by the AD converter.</p>
+<p>The voltage adjustment is implemented using the operational amplifier U1A. U1A compares the measured and the set voltage to each other, and adjusts the base voltage of output transistor Q1 accordingly. In current control mode, the operational amplifier U1B compares the set and measured current. When the measured value is higher than the set value, the operation amplifier pulls down the voltage at the output transistor through the Schottky diode D4, until the measured current corresponds to the set value. Otherwise, the operational amplifier supplies maximum voltage to its output and no current flows through the diode.</p>
+<p>Several measures have been taken to improve noise suppression. Every microchip has a corresponding 0.1uF bypass capacitor to minimize high frequency interference in the power supply output. Low-pass filters are installed at the outputs of the DA converter to reduce noise in said output. The output noise is also significantly reduced by the capacitors added between the inverting input and output of the operational amplifiers.</p>
+<h4 id="microcontroller-firmware"><strong>Microcontroller firmware</strong></h4>
+<p>The microcontroller receives commands from the user interface over the SPI bus, and communicates with the DA and AD converters over I2C and SPI buses. Because the SPI bus between the UI and microcontroller is bidirectional, the values read by the ADC are always sent to the UI when a command arrives.
+The firmware is implemented using C and the C standard library (avr-libc), and uses interrupts for simultaneous use of multiple data buses. The source code is located in the “control_mc” directory on Github.</p>
+<h3 id="front-panel"><strong>Front panel</strong></h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="img" srcset="
+               /project/powersupply/featured_hu9732a99490f44bf836cde7f46ca6dc70_2323902_6d79cccea0b22517392501325877259a.webp 400w,
+               /project/powersupply/featured_hu9732a99490f44bf836cde7f46ca6dc70_2323902_6ad293012890cdb4ac5beb0a843d5166.webp 760w,
+               /project/powersupply/featured_hu9732a99490f44bf836cde7f46ca6dc70_2323902_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/project/powersupply/featured_hu9732a99490f44bf836cde7f46ca6dc70_2323902_6d79cccea0b22517392501325877259a.webp"
+               width="760"
+               height="570"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The front panel of the device consists of a 7” LCD display, a rotary encoder, mechanical keys and connectors for channel outputs and ground. The LCD screen is connected to the Raspberry Pi through HDMI. The keys are monitored by a Arduino Pro Micro microcontroller, which operates a standard HID USB keyboard for the Raspberry Pi using qmk-firmware.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-backside-of-the-front-panel">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="img" srcset="
+               /project/powersupply/frontpanel_pcbs_hu86596b5160e0cb9f5301154afea7e3b5_350365_91ad65f49fb420e300cb4c4099f40e33.webp 400w,
+               /project/powersupply/frontpanel_pcbs_hu86596b5160e0cb9f5301154afea7e3b5_350365_99d3f2b290f8a8c270ecf35922541db1.webp 760w,
+               /project/powersupply/frontpanel_pcbs_hu86596b5160e0cb9f5301154afea7e3b5_350365_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/project/powersupply/frontpanel_pcbs_hu86596b5160e0cb9f5301154afea7e3b5_350365_91ad65f49fb420e300cb4c4099f40e33.webp"
+               width="760"
+               height="453"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Backside of the front panel.
+    </figcaption></figure>
+</p>
+<p>The front panel keys and the rotary encoder switch are connected in a 5x5 matrix using diodes. The microcontroller scans the switch matrix and reads the rotation of the rotary encoder.</p>
+<p>As shown in the figure, the front panel switches are divided into two circuit boards, between which the rows and columns of the matrix are connected by wires.</p>
+<h2 id="measurements-and-testing"><strong>Measurements and testing</strong></h2>
+<p>We tested the performance of our device by measuring the output with an oscilloscope and comparing the result with the linear power supply DF1731SB found at the workshop. The tests measured two different idle voltages, the voltage under load, and the voltage stability as the load changed.</p>
+<p>The no-load voltage was measured at the set values of 2.5V and 20V. In both cases, significant noise was emitted from our device compared to the reference power supply. Noise occurred at about 20kHz. This information could be used to reduce noise by adding or adjusting filter capacitors.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-no-load-voltage-noise-at-25v-our-device-is-in-yellow-and-the-reference-device-is-in-red">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="img" srcset="
+               /project/powersupply/comp_no-load_2.5V_hu074374ee646fcfe3f35859f875b53fb8_105406_d672ad3648545a0e59386198a2afb7d5.webp 400w,
+               /project/powersupply/comp_no-load_2.5V_hu074374ee646fcfe3f35859f875b53fb8_105406_f8bae9be4efcc10d4c89f58ee387f12a.webp 760w,
+               /project/powersupply/comp_no-load_2.5V_hu074374ee646fcfe3f35859f875b53fb8_105406_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/powersupply/comp_no-load_2.5V_hu074374ee646fcfe3f35859f875b53fb8_105406_d672ad3648545a0e59386198a2afb7d5.webp"
+               width="760"
+               height="468"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      No-load voltage noise at 2.5V. Our device is in yellow and the reference device is in red.
+    </figcaption></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-no-load-voltage-noise-at-20v-our-device-is-in-yellow-and-the-reference-device-is-in-red">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="img" srcset="
+               /project/powersupply/comp_no-load_20V_hu5a6063747bb241fb83273da7d4a43089_101247_181c1d64c7611763b8f12ef8ea62f50a.webp 400w,
+               /project/powersupply/comp_no-load_20V_hu5a6063747bb241fb83273da7d4a43089_101247_b5861b58ba5e16e23b947bfe4d7ff568.webp 760w,
+               /project/powersupply/comp_no-load_20V_hu5a6063747bb241fb83273da7d4a43089_101247_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/powersupply/comp_no-load_20V_hu5a6063747bb241fb83273da7d4a43089_101247_181c1d64c7611763b8f12ef8ea62f50a.webp"
+               width="760"
+               height="468"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      No-load voltage noise at 20V. Our device is in yellow and the reference device is in red.
+    </figcaption></figure>
+</p>
+<p>When measuring the output with a load, we used a power resistor of about 4 ohms. Measurements were made with both voltage and current control limiting output 1A current. With voltage limitation, our device worked well, but with current limitation, the result is significantly worse.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-voltage-noise-under-load-when-voltage-limited-our-device-is-in-yellow-and-the-reference-device-is-in-red">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="img" srcset="
+               /project/powersupply/comp_voltage_limit_hu2c0fc9461e2a57dcd5fe9c0d7dbb28c5_98564_f1d0592f98f8b3ac3af187012f4a7cbc.webp 400w,
+               /project/powersupply/comp_voltage_limit_hu2c0fc9461e2a57dcd5fe9c0d7dbb28c5_98564_4144627295d01645d2de664597055cc2.webp 760w,
+               /project/powersupply/comp_voltage_limit_hu2c0fc9461e2a57dcd5fe9c0d7dbb28c5_98564_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/powersupply/comp_voltage_limit_hu2c0fc9461e2a57dcd5fe9c0d7dbb28c5_98564_f1d0592f98f8b3ac3af187012f4a7cbc.webp"
+               width="760"
+               height="468"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Voltage noise under load when voltage-limited. Our device is in yellow and the reference device is in red.
+    </figcaption></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-voltage-noise-under-load-when-current-limited-our-device-is-in-yellow-and-the-reference-device-is-in-red">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="img" srcset="
+               /project/powersupply/comp_current_limit_hu9276a3837d87347ce582753db00c8254_103375_c5ea1c18a84e5b03e17fa0472b96f95e.webp 400w,
+               /project/powersupply/comp_current_limit_hu9276a3837d87347ce582753db00c8254_103375_1fc729dcfda3ca88eed712e6355100bc.webp 760w,
+               /project/powersupply/comp_current_limit_hu9276a3837d87347ce582753db00c8254_103375_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/powersupply/comp_current_limit_hu9276a3837d87347ce582753db00c8254_103375_c5ea1c18a84e5b03e17fa0472b96f95e.webp"
+               width="760"
+               height="468"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Voltage noise under load when current-limited. Our device is in yellow and the reference device is in red.
+    </figcaption></figure>
+</p>
+<p>To measure the effect of a load change, we used the circuit below, which connects a 4-ohm load to a device set to 2.5V at idle. The circuit was implemented without mechanical switches to minimize interference to the measurement.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-circuit-used-to-measure-the-step-response">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="img" srcset="
+               /project/powersupply/step_response_circuit_diagram_hu581baa4a2d54ae51cb6312818208adb8_25117_7ef82d20d8c8d8de1862c29ab77205fd.webp 400w,
+               /project/powersupply/step_response_circuit_diagram_hu581baa4a2d54ae51cb6312818208adb8_25117_22612ff27b080468bcaa9bab13c38b3d.webp 760w,
+               /project/powersupply/step_response_circuit_diagram_hu581baa4a2d54ae51cb6312818208adb8_25117_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/powersupply/step_response_circuit_diagram_hu581baa4a2d54ae51cb6312818208adb8_25117_7ef82d20d8c8d8de1862c29ab77205fd.webp"
+               width="760"
+               height="643"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Circuit used to measure the step response.
+    </figcaption></figure>
+</p>
+<p>The result is much worse than the reference power supply. This is significantly affected by the capacitance at the output of the power supply, which is not added in our own device. This capacitance, on the other hand, would slow down operation if the voltage were to change rapidly, especially in constant current mode.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-step-response-of-the-reference-power-supply">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="img" srcset="
+               /project/powersupply/comp_step_response_ref_hue73c27c10c07801371f7dd3ce0da15d8_67878_c7577bdaf36557b3996ef9cf1c26bd98.webp 400w,
+               /project/powersupply/comp_step_response_ref_hue73c27c10c07801371f7dd3ce0da15d8_67878_5da334c66edbd91f368d12699dc0554c.webp 760w,
+               /project/powersupply/comp_step_response_ref_hue73c27c10c07801371f7dd3ce0da15d8_67878_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/powersupply/comp_step_response_ref_hue73c27c10c07801371f7dd3ce0da15d8_67878_c7577bdaf36557b3996ef9cf1c26bd98.webp"
+               width="760"
+               height="468"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Step response of the reference power supply.
+    </figcaption></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-step-response-of-our-power-supply">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="img" srcset="
+               /project/powersupply/comp_step_response_ours_hu35501f0d8cb482bba25a9052a696a96e_82329_299118632bf7cbdabf31fe0d72af65e5.webp 400w,
+               /project/powersupply/comp_step_response_ours_hu35501f0d8cb482bba25a9052a696a96e_82329_cd72c0fdf646e269988e07c32c745a26.webp 760w,
+               /project/powersupply/comp_step_response_ours_hu35501f0d8cb482bba25a9052a696a96e_82329_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/powersupply/comp_step_response_ours_hu35501f0d8cb482bba25a9052a696a96e_82329_299118632bf7cbdabf31fe0d72af65e5.webp"
+               width="760"
+               height="468"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Step response of our power supply.
+    </figcaption></figure>
+</p>
+<h2 id="conclusions"><strong>Conclusions</strong></h2>
+<p>Our initial specification called for a voltage range of 0-24V and current range of 0-2A. The ranges of the realized device is 0-24V and 0-3A per channel. We ended up making two identical galvanically separated channels in the device, which can be connected in series so that the voltage can be adjusted between 0-48V. The channels can also be connected in parallel, giving up to 6A of current. The planned power was 2 x 48W and the actual power is 2 x 72W = 144W. The project went well and met our requirements specification, and even exceeded it in terms of performance. Based on the tests, the device could be improved by increasing the output capacitance and reducing interference with better filtering.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/software/">Software</a>
+  
+  <a class="badge badge-light" href="/tag/featured/">Featured</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkosomon.github.io%2Fproject%2Fpowersupply%2F&amp;text=Bench&#43;Power&#43;Supply" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkosomon.github.io%2Fproject%2Fpowersupply%2F&amp;t=Bench&#43;Power&#43;Supply" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Bench%20Power%20Supply&amp;body=https%3A%2F%2Fkosomon.github.io%2Fproject%2Fpowersupply%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fkosomon.github.io%2Fproject%2Fpowersupply%2F&amp;title=Bench&#43;Power&#43;Supply" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Bench&#43;Power&#43;Supply%20https%3A%2F%2Fkosomon.github.io%2Fproject%2Fpowersupply%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fkosomon.github.io%2Fproject%2Fpowersupply%2F&amp;title=Bench&#43;Power&#43;Supply" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://kosomon.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu714d49be84428fdc8b83fcb21affdcda_417825_270x270_fill_q75_lanczos_center.jpg" alt="Onni Kosomaa"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://kosomon.github.io/">Onni Kosomaa</a></h5>
+      <h6 class="card-subtitle">Research Staff</h6>
+      <p class="card-text">I&rsquo;m working as Research Staff at Aalto University &amp; Nvidia, researching deep learning for medical imaging reconstruction.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/kosomon" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=GRLxJEcAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/kosomon" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/onnikosomaa/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/uploads/resume.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2022 Onni Kosomaa
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.8621d706896ab6d11dd8fd7042e20931.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>8 | Onni Kosomaa</title>
+    <link>https://kosomon.github.io/publication-type/8/</link>
+      <atom:link href="https://kosomon.github.io/publication-type/8/index.xml" rel="self" type="application/rss+xml" />
+    <description>8</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kosomon.github.io/media/icon_hu16a4c61bfb5a67b5f6a4a662a4f493a7_286411_512x512_fill_lanczos_center_3.png</url>
+      <title>8</title>
+      <link>https://kosomon.github.io/publication-type/8/</link>
+    </image>
+    
+    <item>
+      <title>End-to-end training for a three-dimensional tomography reconstruction pipeline</title>
+      <link>https://kosomon.github.io/publication/patent-end-to-end-training/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://kosomon.github.io/publication/patent-end-to-end-training/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Three-dimensional tomography reconstruction pipeline </title>
+      <link>https://kosomon.github.io/publication/patent-three-dimensional-tomography/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://kosomon.github.io/publication/patent-three-dimensional-tomography/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

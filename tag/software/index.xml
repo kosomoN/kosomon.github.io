@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software | Onni Kosomaa</title>
+    <link>https://kosomon.github.io/tag/software/</link>
+      <atom:link href="https://kosomon.github.io/tag/software/index.xml" rel="self" type="application/rss+xml" />
+    <description>Software</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kosomon.github.io/media/icon_hu16a4c61bfb5a67b5f6a4a662a4f493a7_286411_512x512_fill_lanczos_center_3.png</url>
+      <title>Software</title>
+      <link>https://kosomon.github.io/tag/software/</link>
+    </image>
+    
+    <item>
+      <title>Advance Computer Graphics Course at Aalto University</title>
+      <link>https://kosomon.github.io/project/advanced-cg-course/</link>
+      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://kosomon.github.io/project/advanced-cg-course/</guid>
+      <description>&lt;p&gt;Rendered included: Dielectric reflection and transmission. Cook-Torrance BRDF. Sobol sampling with a Gaussian filter. Thin lens depth of field. Tangent space normal mapping. Texture based emissive triangles.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bench Power Supply</title>
+      <link>https://kosomon.github.io/project/powersupply/</link>
+      <pubDate>Thu, 19 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://kosomon.github.io/project/powersupply/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Together with two friends, we designed a dual-channel floating bench power supply for the Electronics Workshop course at Aalto University. The course provided facilities for designing and executing an electronics project over the course of a semester. We designed everything from the analog and digital circuits to the enclosure.&lt;/p&gt;
+&lt;p&gt;Both of the power supply output channels are independent, and have their own galvanically isolated control system. The user interface is running on a Raspberry Pi, which communicates with the power supply channels through an SPI connection through optocouplers.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Designed the regulator PCB and two interface PCBs from scratch using KiCAD.&lt;/li&gt;
+&lt;li&gt;We tried out as many PCB manufacturing techniques as possible, including acid etching, CNC routing and we had the regulator PCBs professionally manufactured (not including assembly).&lt;/li&gt;
+&lt;li&gt;Regulator firmware for the AVR microcontroller.&lt;/li&gt;
+&lt;li&gt;Interface software for Raspberry Pi.&lt;/li&gt;
+&lt;li&gt;Physical user interface software as a USB HID.&lt;/li&gt;
+&lt;li&gt;Evaluated the finished power supply against a commercial power supply with similar specifications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;The subject of the project was an adjustable laboratory power supply. Based on the specification, we set out to build a laboratory power supply with a digitally adjustable voltage between 0-24V and a current of 0-2A. The specification changed slightly from the design, as the transformer we chose gives up to 3A power to the two channels. The voltage and current of the final device are adjustable between 0-24V and 0-3A.&lt;/p&gt;
+&lt;h2 id=&#34;implemented-hardware&#34;&gt;&lt;strong&gt;Implemented hardware&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Two galvanically isolated output channels&lt;/li&gt;
+&lt;li&gt;Voltage range: 0-24V / channel, 48V if connected in series&lt;/li&gt;
+&lt;li&gt;Current range: 0-3A / channel, 6A if connected in parallel&lt;/li&gt;
+&lt;li&gt;Power: 144W&lt;/li&gt;
+&lt;li&gt;Voltage accuracy: &lt;strong&gt;≈&lt;/strong&gt; 50mV&lt;/li&gt;
+&lt;li&gt;Current accuracy: &lt;strong&gt;≈&lt;/strong&gt; 10mA&lt;/li&gt;
+&lt;li&gt;Outputs: Two / channel, and one for ground&lt;/li&gt;
+&lt;li&gt;Inputs: C13 connector 230V&lt;/li&gt;
+&lt;li&gt;Overheating protection&lt;/li&gt;
+&lt;li&gt;Current limitation&lt;/li&gt;
+&lt;li&gt;Temperature-controlled fan&lt;/li&gt;
+&lt;li&gt;7” LCD display&lt;/li&gt;
+&lt;li&gt;Keypad and rotary encoder for adjusting settings&lt;/li&gt;
+&lt;li&gt;Controllable through USB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The operation of the device is controlled by a single-board computer Raspberry Pi Zero. The user interface is displayed on a 7” LCD and the device can be controlled through either physical keys or over USB.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;img&#34; srcset=&#34;
+               /project/powersupply/regulator_block_diagram_hu5a1bfb693d22e8b6e3d1b3b772fee3be_87525_18d80003bf6e17a61cb75b909c76f9ef.webp 400w,
+               /project/powersupply/regulator_block_diagram_hu5a1bfb693d22e8b6e3d1b3b772fee3be_87525_5c1cbda3b13bbc267055627684ce32db.webp 760w,
+               /project/powersupply/regulator_block_diagram_hu5a1bfb693d22e8b6e3d1b3b772fee3be_87525_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://kosomon.github.io/project/powersupply/regulator_block_diagram_hu5a1bfb693d22e8b6e3d1b3b772fee3be_87525_18d80003bf6e17a61cb75b909c76f9ef.webp&#34;
+               width=&#34;704&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;linear-regulator&#34;&gt;&lt;strong&gt;Linear Regulator&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The Raspberry Pi controls two identical regulator circuits using SPI. One such circuit is illustrated in the block diagram below the galvanic isolation line. The circuit has an AVR microcontroller which receives the desired voltage and current limits from the Raspberry Pi. The microcontroller then sends the received voltage and current limits to the DA converter and reads the realized voltage and current from the AD converter. Each circuit has its own optical isolators for the SPI bus and the operating voltages of both circuits are galvanically isolated from each other and from ground. The Raspberry Pi also controls the output relays to disconnect the load if necessary.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-the-circuit-diagram-for-the-analog-section-of-the-regulator-circuit&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;img&#34; srcset=&#34;
+               /project/powersupply/regulator_circuit_diagram_hucc3009fab59d7f6caa5ef319fffc2df4_89533_1656aa9498a7bc06d64f1ab933b7270d.webp 400w,
+               /project/powersupply/regulator_circuit_diagram_hucc3009fab59d7f6caa5ef319fffc2df4_89533_42b86e2e19ec7405c576f4e0141d7656.webp 760w,
+               /project/powersupply/regulator_circuit_diagram_hucc3009fab59d7f6caa5ef319fffc2df4_89533_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://kosomon.github.io/project/powersupply/regulator_circuit_diagram_hucc3009fab59d7f6caa5ef319fffc2df4_89533_1656aa9498a7bc06d64f1ab933b7270d.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;538&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      The circuit diagram for the analog section of the regulator circuit.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-regulator-pcb-for-a-single-channel&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Regulator PCB for a single channel.&#34; srcset=&#34;
+               /project/powersupply/psu_pcb_hud6adb908567dc5d9a95c9f8bb861f90f_1371009_1c80a24239de970d0ca48d2a48192efa.webp 400w,
+               /project/powersupply/psu_pcb_hud6adb908567dc5d9a95c9f8bb861f90f_1371009_e9e1ba3068cf3af8966562885b00bb65.webp 760w,
+               /project/powersupply/psu_pcb_hud6adb908567dc5d9a95c9f8bb861f90f_1371009_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://kosomon.github.io/project/powersupply/psu_pcb_hud6adb908567dc5d9a95c9f8bb861f90f_1371009_1c80a24239de970d0ca48d2a48192efa.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Regulator PCB for a single channel.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The main components of the regulators are:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Component&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Operational Amplifier&lt;/td&gt;
+&lt;td&gt;MAX9944ASA+T&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Analog to Digital Converter (ADC)&lt;/td&gt;
+&lt;td&gt;MCP3422A0-E/SN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Digital to Analog Converter (DAC)&lt;/td&gt;
+&lt;td&gt;MCP4822-E/SN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Current Amplifier&lt;/td&gt;
+&lt;td&gt;INA240A1DR&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Microcontroller&lt;/td&gt;
+&lt;td&gt;ATMEGA328PB-AU&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The circuit is switched on when a 25-28V (rms) AC voltage is connected to connector J1. The AC voltage is rectified and filtered with a 15000uF electrolytic capacitor. The microcontroller monitors the operating voltage through the UNREG_MON pin connected to the ADC. This signal is reduced and overvoltage-protected.&lt;/p&gt;
+&lt;p&gt;U2 provides the 5V supply voltage for the microchips requiring it. In order to keep the power dissipated in the regulator reasonable, a 15V zener diode is placed between it and the operating voltage, which dissipates approximately half of the power. The operational amplifier U1 controls the transistor on the high voltage side of the load, which means it operates in a large voltage range and is connected directly to the rectifier through the overvoltage protection formed by the zener diode D3.&lt;/p&gt;
+&lt;p&gt;The output voltage of the power supply is measured through the voltage divider formed by R6 and R7 and the current is measured through a separate current amplifier U3. These provide the reference voltages of the operational amplifiers as well as the signals measured by the AD converter.&lt;/p&gt;
+&lt;p&gt;The voltage adjustment is implemented using the operational amplifier U1A. U1A compares the measured and the set voltage to each other, and adjusts the base voltage of output transistor Q1 accordingly. In current control mode, the operational amplifier U1B compares the set and measured current. When the measured value is higher than the set value, the operation amplifier pulls down the voltage at the output transistor through the Schottky diode D4, until the measured current corresponds to the set value. Otherwise, the operational amplifier supplies maximum voltage to its output and no current flows through the diode.&lt;/p&gt;
+&lt;p&gt;Several measures have been taken to improve noise suppression. Every microchip has a corresponding 0.1uF bypass capacitor to minimize high frequency interference in the power supply output. Low-pass filters are installed at the outputs of the DA converter to reduce noise in said output. The output noise is also significantly reduced by the capacitors added between the inverting input and output of the operational amplifiers.&lt;/p&gt;
+&lt;h4 id=&#34;microcontroller-firmware&#34;&gt;&lt;strong&gt;Microcontroller firmware&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;The microcontroller receives commands from the user interface over the SPI bus, and communicates with the DA and AD converters over I2C and SPI buses. Because the SPI bus between the UI and microcontroller is bidirectional, the values read by the ADC are always sent to the UI when a command arrives.
+The firmware is implemented using C and the C standard library (avr-libc), and uses interrupts for simultaneous use of multiple data buses. The source code is located in the “control_mc” directory on Github.&lt;/p&gt;
+&lt;h3 id=&#34;front-panel&#34;&gt;&lt;strong&gt;Front panel&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;img&#34; srcset=&#34;
+               /project/powersupply/featured_hu9732a99490f44bf836cde7f46ca6dc70_2323902_6d79cccea0b22517392501325877259a.webp 400w,
+               /project/powersupply/featured_hu9732a99490f44bf836cde7f46ca6dc70_2323902_6ad293012890cdb4ac5beb0a843d5166.webp 760w,
+               /project/powersupply/featured_hu9732a99490f44bf836cde7f46ca6dc70_2323902_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://kosomon.github.io/project/powersupply/featured_hu9732a99490f44bf836cde7f46ca6dc70_2323902_6d79cccea0b22517392501325877259a.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;570&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The front panel of the device consists of a 7” LCD display, a rotary encoder, mechanical keys and connectors for channel outputs and ground. The LCD screen is connected to the Raspberry Pi through HDMI. The keys are monitored by a Arduino Pro Micro microcontroller, which operates a standard HID USB keyboard for the Raspberry Pi using qmk-firmware.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-backside-of-the-front-panel&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;img&#34; srcset=&#34;
+               /project/powersupply/frontpanel_pcbs_hu86596b5160e0cb9f5301154afea7e3b5_350365_91ad65f49fb420e300cb4c4099f40e33.webp 400w,
+               /project/powersupply/frontpanel_pcbs_hu86596b5160e0cb9f5301154afea7e3b5_350365_99d3f2b290f8a8c270ecf35922541db1.webp 760w,
+               /project/powersupply/frontpanel_pcbs_hu86596b5160e0cb9f5301154afea7e3b5_350365_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://kosomon.github.io/project/powersupply/frontpanel_pcbs_hu86596b5160e0cb9f5301154afea7e3b5_350365_91ad65f49fb420e300cb4c4099f40e33.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;453&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Backside of the front panel.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The front panel keys and the rotary encoder switch are connected in a 5x5 matrix using diodes. The microcontroller scans the switch matrix and reads the rotation of the rotary encoder.&lt;/p&gt;
+&lt;p&gt;As shown in the figure, the front panel switches are divided into two circuit boards, between which the rows and columns of the matrix are connected by wires.&lt;/p&gt;
+&lt;h2 id=&#34;measurements-and-testing&#34;&gt;&lt;strong&gt;Measurements and testing&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;We tested the performance of our device by measuring the output with an oscilloscope and comparing the result with the linear power supply DF1731SB found at the workshop. The tests measured two different idle voltages, the voltage under load, and the voltage stability as the load changed.&lt;/p&gt;
+&lt;p&gt;The no-load voltage was measured at the set values of 2.5V and 20V. In both cases, significant noise was emitted from our device compared to the reference power supply. Noise occurred at about 20kHz. This information could be used to reduce noise by adding or adjusting filter capacitors.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-no-load-voltage-noise-at-25v-our-device-is-in-yellow-and-the-reference-device-is-in-red&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;img&#34; srcset=&#34;
+               /project/powersupply/comp_no-load_2.5V_hu074374ee646fcfe3f35859f875b53fb8_105406_d672ad3648545a0e59386198a2afb7d5.webp 400w,
+               /project/powersupply/comp_no-load_2.5V_hu074374ee646fcfe3f35859f875b53fb8_105406_f8bae9be4efcc10d4c89f58ee387f12a.webp 760w,
+               /project/powersupply/comp_no-load_2.5V_hu074374ee646fcfe3f35859f875b53fb8_105406_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://kosomon.github.io/project/powersupply/comp_no-load_2.5V_hu074374ee646fcfe3f35859f875b53fb8_105406_d672ad3648545a0e59386198a2afb7d5.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;468&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      No-load voltage noise at 2.5V. Our device is in yellow and the reference device is in red.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-no-load-voltage-noise-at-20v-our-device-is-in-yellow-and-the-reference-device-is-in-red&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;img&#34; srcset=&#34;
+               /project/powersupply/comp_no-load_20V_hu5a6063747bb241fb83273da7d4a43089_101247_181c1d64c7611763b8f12ef8ea62f50a.webp 400w,
+               /project/powersupply/comp_no-load_20V_hu5a6063747bb241fb83273da7d4a43089_101247_b5861b58ba5e16e23b947bfe4d7ff568.webp 760w,
+               /project/powersupply/comp_no-load_20V_hu5a6063747bb241fb83273da7d4a43089_101247_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://kosomon.github.io/project/powersupply/comp_no-load_20V_hu5a6063747bb241fb83273da7d4a43089_101247_181c1d64c7611763b8f12ef8ea62f50a.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;468&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      No-load voltage noise at 20V. Our device is in yellow and the reference device is in red.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;When measuring the output with a load, we used a power resistor of about 4 ohms. Measurements were made with both voltage and current control limiting output 1A current. With voltage limitation, our device worked well, but with current limitation, the result is significantly worse.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-voltage-noise-under-load-when-voltage-limited-our-device-is-in-yellow-and-the-reference-device-is-in-red&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;img&#34; srcset=&#34;
+               /project/powersupply/comp_voltage_limit_hu2c0fc9461e2a57dcd5fe9c0d7dbb28c5_98564_f1d0592f98f8b3ac3af187012f4a7cbc.webp 400w,
+               /project/powersupply/comp_voltage_limit_hu2c0fc9461e2a57dcd5fe9c0d7dbb28c5_98564_4144627295d01645d2de664597055cc2.webp 760w,
+               /project/powersupply/comp_voltage_limit_hu2c0fc9461e2a57dcd5fe9c0d7dbb28c5_98564_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://kosomon.github.io/project/powersupply/comp_voltage_limit_hu2c0fc9461e2a57dcd5fe9c0d7dbb28c5_98564_f1d0592f98f8b3ac3af187012f4a7cbc.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;468&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Voltage noise under load when voltage-limited. Our device is in yellow and the reference device is in red.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-voltage-noise-under-load-when-current-limited-our-device-is-in-yellow-and-the-reference-device-is-in-red&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;img&#34; srcset=&#34;
+               /project/powersupply/comp_current_limit_hu9276a3837d87347ce582753db00c8254_103375_c5ea1c18a84e5b03e17fa0472b96f95e.webp 400w,
+               /project/powersupply/comp_current_limit_hu9276a3837d87347ce582753db00c8254_103375_1fc729dcfda3ca88eed712e6355100bc.webp 760w,
+               /project/powersupply/comp_current_limit_hu9276a3837d87347ce582753db00c8254_103375_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://kosomon.github.io/project/powersupply/comp_current_limit_hu9276a3837d87347ce582753db00c8254_103375_c5ea1c18a84e5b03e17fa0472b96f95e.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;468&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Voltage noise under load when current-limited. Our device is in yellow and the reference device is in red.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;To measure the effect of a load change, we used the circuit below, which connects a 4-ohm load to a device set to 2.5V at idle. The circuit was implemented without mechanical switches to minimize interference to the measurement.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-circuit-used-to-measure-the-step-response&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;img&#34; srcset=&#34;
+               /project/powersupply/step_response_circuit_diagram_hu581baa4a2d54ae51cb6312818208adb8_25117_7ef82d20d8c8d8de1862c29ab77205fd.webp 400w,
+               /project/powersupply/step_response_circuit_diagram_hu581baa4a2d54ae51cb6312818208adb8_25117_22612ff27b080468bcaa9bab13c38b3d.webp 760w,
+               /project/powersupply/step_response_circuit_diagram_hu581baa4a2d54ae51cb6312818208adb8_25117_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://kosomon.github.io/project/powersupply/step_response_circuit_diagram_hu581baa4a2d54ae51cb6312818208adb8_25117_7ef82d20d8c8d8de1862c29ab77205fd.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;643&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Circuit used to measure the step response.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The result is much worse than the reference power supply. This is significantly affected by the capacitance at the output of the power supply, which is not added in our own device. This capacitance, on the other hand, would slow down operation if the voltage were to change rapidly, especially in constant current mode.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-step-response-of-the-reference-power-supply&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;img&#34; srcset=&#34;
+               /project/powersupply/comp_step_response_ref_hue73c27c10c07801371f7dd3ce0da15d8_67878_c7577bdaf36557b3996ef9cf1c26bd98.webp 400w,
+               /project/powersupply/comp_step_response_ref_hue73c27c10c07801371f7dd3ce0da15d8_67878_5da334c66edbd91f368d12699dc0554c.webp 760w,
+               /project/powersupply/comp_step_response_ref_hue73c27c10c07801371f7dd3ce0da15d8_67878_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://kosomon.github.io/project/powersupply/comp_step_response_ref_hue73c27c10c07801371f7dd3ce0da15d8_67878_c7577bdaf36557b3996ef9cf1c26bd98.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;468&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Step response of the reference power supply.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-step-response-of-our-power-supply&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;img&#34; srcset=&#34;
+               /project/powersupply/comp_step_response_ours_hu35501f0d8cb482bba25a9052a696a96e_82329_299118632bf7cbdabf31fe0d72af65e5.webp 400w,
+               /project/powersupply/comp_step_response_ours_hu35501f0d8cb482bba25a9052a696a96e_82329_cd72c0fdf646e269988e07c32c745a26.webp 760w,
+               /project/powersupply/comp_step_response_ours_hu35501f0d8cb482bba25a9052a696a96e_82329_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://kosomon.github.io/project/powersupply/comp_step_response_ours_hu35501f0d8cb482bba25a9052a696a96e_82329_299118632bf7cbdabf31fe0d72af65e5.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;468&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Step response of our power supply.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;conclusions&#34;&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Our initial specification called for a voltage range of 0-24V and current range of 0-2A. The ranges of the realized device is 0-24V and 0-3A per channel. We ended up making two identical galvanically separated channels in the device, which can be connected in series so that the voltage can be adjusted between 0-48V. The channels can also be connected in parallel, giving up to 6A of current. The planned power was 2 x 48W and the actual power is 2 x 72W = 144W. The project went well and met our requirements specification, and even exceeded it in terms of performance. Based on the tests, the device could be improved by increasing the output capacitance and reducing interference with better filtering.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nintendo Entertainment System Emulator</title>
+      <link>https://kosomon.github.io/project/nes-emu/</link>
+      <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://kosomon.github.io/project/nes-emu/</guid>
+      <description>&lt;p&gt;Nintendo Entertainment System emulator with full video and audio support, which I wrote as a hobby project when I was a first year student at Aalto University. Written in C, with SDL and libc.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
